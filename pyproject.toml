@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "soda-test"
+version = "0.1.0"
+description = ""
+authors = ["Ganesh Tiwari <ganesht049@gmail.com>"]
+readme = "README.md"
+packages = [{include = "soda_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "soda_test.main:main"
